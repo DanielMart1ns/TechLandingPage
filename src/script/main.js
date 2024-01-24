@@ -1,3 +1,5 @@
+AOS.init();
+
 const diaDaFormatura = new Date("Apr 29, 2024 18:00:00")
 const TimeStampDaFormatura = diaDaFormatura.getTime()
 

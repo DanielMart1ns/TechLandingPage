@@ -1,0 +1,155 @@
+@use 'variaveis';
+.tecnologias{
+    padding-bottom: 60px;
+
+    &--html{
+        background-image: linear-gradient(variaveis.$background1, variaveis.$background2);
+
+        h2{
+            color: variaveis.$background4;
+        }
+    }
+
+    &--css{
+        background-image: linear-gradient(variaveis.$background2, variaveis.$background3);
+    }
+
+    &--js{
+        background-image: linear-gradient(variaveis.$background3, variaveis.$background4);
+    }
+
+    &--jquery{
+        background-image: linear-gradient(variaveis.$background4, variaveis.$background3);
+    }
+
+    &--bootstrap{
+        background-image: linear-gradient(variaveis.$background3, variaveis.$background2);
+    }
+
+    &--sass{
+        background-image: linear-gradient(variaveis.$background2, variaveis.$background1);
+        padding: 100px 0;
+    }
+
+    &--less{
+        background-image: linear-gradient(variaveis.$background1, variaveis.$background2);
+        padding: 160px 0;
+
+        h2{
+            color: variaveis.$background4;
+        }
+    }
+
+    &--gulp{
+        background-image: linear-gradient(variaveis.$background2, variaveis.$background3);
+        padding: 100px 0;
+    }
+
+    &--grunt{
+        background-image: linear-gradient(variaveis.$background3, variaveis.$background4);
+    }
+
+    &--parcel{
+        background-image: linear-gradient(variaveis.$background4, variaveis.$background3);
+        padding: 260px 0;
+    }
+
+    &--ajax{
+        background-image: linear-gradient(variaveis.$background3, variaveis.$background2);
+    }
+
+    &--typescript{
+        background-image: linear-gradient(variaveis.$background2, variaveis.$background1);
+    }
+
+    &--react{
+        background-image: linear-gradient(variaveis.$background1, variaveis.$background2);
+
+        h2{
+            color: variaveis.$background4;
+        }
+    }
+
+    &--vuejs{
+        background-image: linear-gradient(variaveis.$background2, variaveis.$background3);
+    }
+
+    &--redux{
+        background-image: linear-gradient(variaveis.$background3, variaveis.$background4);
+    }
+
+    &--cypress{
+        background-image: linear-gradient(variaveis.$background4, variaveis.$background2);
+        padding: 160px 0;
+    }
+
+    h1{
+        margin: 20px 0;
+        color: variaveis.$background4;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__title{
+        color: variaveis.$background1;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    &__image{
+        width: 360px;
+    }
+
+    @media (max-width: 640px) {
+        h2{
+            margin-bottom: 20px;
+        }
+
+        &--parcel{
+            padding: 0;
+            h2{
+                padding-bottom: 100px;
+            }
+
+            img{
+                padding-bottom: 100px;
+            }
+        }
+
+        &--cypress{
+            padding: 0;
+            h2{
+                padding-bottom: 100px;
+            }
+
+            img{
+                padding-bottom: 100px;
+            }
+        }
+
+        .container{
+            display: block;
+        }
+
+        &__title{
+            text-align: center;
+        }
+
+        &__image{
+            width: 100%;
+            margin-bottom: 36px;
+        }
+    }
+}
